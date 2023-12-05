@@ -39,6 +39,7 @@ namespace Calculator_5_klassnika
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.Error_TB = new System.Windows.Forms.Label();
+            this.TB_NotationError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // numberTB
@@ -55,6 +56,7 @@ namespace Calculator_5_klassnika
             this.numerationFirstTB.Name = "numerationFirstTB";
             this.numerationFirstTB.Size = new System.Drawing.Size(38, 20);
             this.numerationFirstTB.TabIndex = 1;
+            this.numerationFirstTB.TextChanged += new System.EventHandler(this.numerationFirstTB_TextChanged);
             // 
             // numerationSecondTB
             // 
@@ -62,15 +64,18 @@ namespace Calculator_5_klassnika
             this.numerationSecondTB.Name = "numerationSecondTB";
             this.numerationSecondTB.Size = new System.Drawing.Size(38, 20);
             this.numerationSecondTB.TabIndex = 2;
+            this.numerationSecondTB.TextChanged += new System.EventHandler(this.numerationSecondTB_TextChanged);
             // 
             // btn_toAnswer
             // 
+            this.btn_toAnswer.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btn_toAnswer.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn_toAnswer.Location = new System.Drawing.Point(610, 214);
             this.btn_toAnswer.Name = "btn_toAnswer";
             this.btn_toAnswer.Size = new System.Drawing.Size(178, 62);
             this.btn_toAnswer.TabIndex = 3;
             this.btn_toAnswer.Text = "Перевести";
-            this.btn_toAnswer.UseVisualStyleBackColor = true;
+            this.btn_toAnswer.UseVisualStyleBackColor = false;
             this.btn_toAnswer.Click += new System.EventHandler(this.btn_toAnswer_Click);
             // 
             // label1
@@ -112,6 +117,7 @@ namespace Calculator_5_klassnika
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.ForestGreen;
             this.label5.Location = new System.Drawing.Point(12, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(743, 13);
@@ -130,11 +136,24 @@ namespace Calculator_5_klassnika
             this.Error_TB.Text = "Некорректный ввод, используйте символы из алфавита";
             this.Error_TB.Visible = false;
             // 
+            // TB_NotationError
+            // 
+            this.TB_NotationError.AutoSize = true;
+            this.TB_NotationError.ForeColor = System.Drawing.Color.Red;
+            this.TB_NotationError.Location = new System.Drawing.Point(286, 241);
+            this.TB_NotationError.Name = "TB_NotationError";
+            this.TB_NotationError.Size = new System.Drawing.Size(35, 13);
+            this.TB_NotationError.TabIndex = 10;
+            this.TB_NotationError.Text = "label6";
+            this.TB_NotationError.Visible = false;
+            // 
             // number_conversion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TB_NotationError);
             this.Controls.Add(this.Error_TB);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -165,5 +184,6 @@ namespace Calculator_5_klassnika
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label Error_TB;
+        private System.Windows.Forms.Label TB_NotationError;
     }
 }

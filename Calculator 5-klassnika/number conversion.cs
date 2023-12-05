@@ -16,28 +16,87 @@ namespace Calculator_5_klassnika
         public static string number, totalNumber, upperDigits, digits, convertedToTenth, convertedToOther;
         public static int notation, totalNotation, numberInTenth;
 
+        private void numerationSecondTB_TextChanged(object sender, EventArgs e)
+        {
+            string notationTXT = numerationSecondTB.Text;
+
+            if (int.TryParse(notationTXT, out int num))
+            {
+                if (num < 0 || num > 50)
+                {
+                    TB_NotationError.Visible = true;
+                    TB_NotationError.Text = "Введите СС от 2 до 50";
+                    btn_toAnswer.Enabled = false;
+                }
+                else
+                {
+                    TB_NotationError.Visible = false;
+                    btn_toAnswer.Enabled = true;
+                }
+            }
+            else
+            {
+                TB_NotationError.Visible = true;
+                TB_NotationError.Text = "Введите СС числом от 2 до 50";
+                btn_toAnswer.Enabled = false;
+            }
+        }
+
+        private void numerationFirstTB_TextChanged(object sender, EventArgs e)
+        {
+            string notationTXT = numerationFirstTB.Text;
+
+            if(int.TryParse(notationTXT, out int num))
+            {
+                if (num < 0 || num > 50)
+                {
+                    TB_NotationError.Visible = true;
+                    TB_NotationError.Text = "Введите СС от 2 до 50";
+                    btn_toAnswer.Enabled = false;
+                }
+                else
+                {
+                    TB_NotationError.Visible = false;
+                    btn_toAnswer.Enabled = true;
+                }
+            }
+            else
+            {
+                TB_NotationError.Visible = true;
+                TB_NotationError.Text = "Введите СС числом от 2 до 50";
+                btn_toAnswer.Enabled = false;
+            }
+        }
+
         private void numberTB_TextChanged(object sender, EventArgs e)
         {
             string numberTXT = numberTB.Text;
             int count = 0;
 
-            for(int i = 0; i < numberTXT.Length; i++)
+            if (!string.IsNullOrEmpty(numberTXT))
             {
-                for(int j = 0; j < alphabet.Length; j++)
+                for (int i = 0; i < numberTXT.Length; i++)
                 {
-                    if (numberTXT[i] == alphabet[j]) count++;
+                    for (int j = 0; j < alphabet.Length; j++)
+                    {
+                        if (numberTXT[i] == alphabet[j]) count++;
+                    }
                 }
-            }
 
-            if (count != numberTXT.Length)
-            {
-                Error_TB.Visible = true;
-                btn_toAnswer.Enabled = false;
+                if (count != numberTXT.Length)
+                {
+                    Error_TB.Visible = true;
+                    btn_toAnswer.Enabled = false;
+                }
+                else
+                {
+                    Error_TB.Visible = false;
+                    btn_toAnswer.Enabled = true;
+                }
             }
             else
             {
-                Error_TB.Visible = false;
-                btn_toAnswer.Enabled = true;
+                btn_toAnswer.Enabled = false;
             }
         }
 

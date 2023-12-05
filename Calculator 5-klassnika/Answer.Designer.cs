@@ -55,6 +55,7 @@ namespace Calculator_5_klassnika
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.label1.ForeColor = System.Drawing.Color.Purple;
             this.label1.Location = new System.Drawing.Point(12, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 16);
@@ -65,6 +66,7 @@ namespace Calculator_5_klassnika
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.label2.ForeColor = System.Drawing.Color.Purple;
             this.label2.Location = new System.Drawing.Point(12, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 16);
@@ -75,6 +77,7 @@ namespace Calculator_5_klassnika
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.label3.ForeColor = System.Drawing.Color.Purple;
             this.label3.Location = new System.Drawing.Point(12, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 16);
@@ -85,6 +88,7 @@ namespace Calculator_5_klassnika
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.label4.ForeColor = System.Drawing.Color.Purple;
             this.label4.Location = new System.Drawing.Point(12, 93);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 16);
@@ -95,6 +99,7 @@ namespace Calculator_5_klassnika
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.label5.ForeColor = System.Drawing.Color.Purple;
             this.label5.Location = new System.Drawing.Point(12, 119);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 16);
@@ -105,6 +110,7 @@ namespace Calculator_5_klassnika
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label6.ForeColor = System.Drawing.Color.Purple;
             this.label6.Location = new System.Drawing.Point(12, 181);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(46, 17);
@@ -115,6 +121,7 @@ namespace Calculator_5_klassnika
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.label7.ForeColor = System.Drawing.Color.Purple;
             this.label7.Location = new System.Drawing.Point(12, 149);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(872, 16);
@@ -126,6 +133,7 @@ namespace Calculator_5_klassnika
             // 
             this.LB_ConvertedToOther.AutoSize = true;
             this.LB_ConvertedToOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.LB_ConvertedToOther.ForeColor = System.Drawing.Color.Purple;
             this.LB_ConvertedToOther.Location = new System.Drawing.Point(12, 223);
             this.LB_ConvertedToOther.Name = "LB_ConvertedToOther";
             this.LB_ConvertedToOther.Size = new System.Drawing.Size(45, 16);
@@ -136,6 +144,7 @@ namespace Calculator_5_klassnika
             // 
             this.LB_answer.AutoSize = true;
             this.LB_answer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.LB_answer.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.LB_answer.Location = new System.Drawing.Point(526, 521);
             this.LB_answer.Name = "LB_answer";
             this.LB_answer.Size = new System.Drawing.Size(64, 25);
@@ -147,6 +156,7 @@ namespace Calculator_5_klassnika
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1438, 622);
             this.Controls.Add(this.LB_answer);
             this.Controls.Add(this.LB_ConvertedToOther);
