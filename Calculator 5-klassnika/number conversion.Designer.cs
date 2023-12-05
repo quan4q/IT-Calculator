@@ -38,6 +38,7 @@ namespace Calculator_5_klassnika
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.Error_TB = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // numberTB
@@ -46,6 +47,7 @@ namespace Calculator_5_klassnika
             this.numberTB.Name = "numberTB";
             this.numberTB.Size = new System.Drawing.Size(174, 20);
             this.numberTB.TabIndex = 0;
+            this.numberTB.TextChanged += new System.EventHandler(this.numberTB_TextChanged);
             // 
             // numerationFirstTB
             // 
@@ -117,11 +119,23 @@ namespace Calculator_5_klassnika
             this.label5.Text = "При переводе используется следующий алфавит: \"0 1 2 3 4 5 6 7 8 9 A B C D E F G H" +
     " I J K L M N O P Q R S T U V W X Y Z + - = ( ) * & ? ! @ # $ % /\" ";
             // 
+            // Error_TB
+            // 
+            this.Error_TB.AutoSize = true;
+            this.Error_TB.ForeColor = System.Drawing.Color.Red;
+            this.Error_TB.Location = new System.Drawing.Point(63, 323);
+            this.Error_TB.Name = "Error_TB";
+            this.Error_TB.Size = new System.Drawing.Size(295, 13);
+            this.Error_TB.TabIndex = 9;
+            this.Error_TB.Text = "Некорректный ввод, используйте символы из алфавита";
+            this.Error_TB.Visible = false;
+            // 
             // number_conversion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Error_TB);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -150,5 +164,6 @@ namespace Calculator_5_klassnika
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label Error_TB;
     }
 }

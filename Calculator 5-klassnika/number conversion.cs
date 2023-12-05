@@ -16,6 +16,31 @@ namespace Calculator_5_klassnika
         public static string number, totalNumber, upperDigits, digits, convertedToTenth, convertedToOther;
         public static int notation, totalNotation, numberInTenth;
 
+        private void numberTB_TextChanged(object sender, EventArgs e)
+        {
+            string numberTXT = numberTB.Text;
+            int count = 0;
+
+            for(int i = 0; i < numberTXT.Length; i++)
+            {
+                for(int j = 0; j < alphabet.Length; j++)
+                {
+                    if (numberTXT[i] == alphabet[j]) count++;
+                }
+            }
+
+            if (count != numberTXT.Length)
+            {
+                Error_TB.Visible = true;
+                btn_toAnswer.Enabled = false;
+            }
+            else
+            {
+                Error_TB.Visible = false;
+                btn_toAnswer.Enabled = true;
+            }
+        }
+
         public number_conversion()
         {
             InitializeComponent();
