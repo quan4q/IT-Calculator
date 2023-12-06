@@ -28,5 +28,12 @@ namespace Calculator_5_klassnika
         {
             Application.Exit();
         }
+
+        private void btn_ToRome_Click(object sender, EventArgs e)
+        {
+            RomeNotation rome = new RomeNotation();
+            rome.Show();
+            this.Visible = false;
+        }
     }
 }

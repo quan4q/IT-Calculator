@@ -66,6 +66,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RomeNotation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RomeNotation.Designer.cs">
+      <DependentUpon>RomeNotation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RomeNotationAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RomeNotationAnswer.Designer.cs">
+      <DependentUpon>RomeNotationAnswer.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Answer.resx">
       <DependentUpon>Answer.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +96,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RomeNotation.resx">
+      <DependentUpon>RomeNotation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RomeNotationAnswer.resx">
+      <DependentUpon>RomeNotationAnswer.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

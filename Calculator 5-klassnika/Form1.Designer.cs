@@ -32,6 +32,7 @@ namespace Calculator_5_klassnika
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.btn_ToRome = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -47,9 +48,9 @@ namespace Calculator_5_klassnika
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button1.Location = new System.Drawing.Point(319, 66);
+            this.button1.Location = new System.Drawing.Point(303, 62);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 46);
+            this.button1.Size = new System.Drawing.Size(184, 58);
             this.button1.TabIndex = 1;
             this.button1.Text = "Перевод в другую СС";
             this.button1.UseVisualStyleBackColor = false;
@@ -66,17 +67,29 @@ namespace Calculator_5_klassnika
             this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
+            // btn_ToRome
+            // 
+            this.btn_ToRome.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btn_ToRome.Location = new System.Drawing.Point(303, 126);
+            this.btn_ToRome.Name = "btn_ToRome";
+            this.btn_ToRome.Size = new System.Drawing.Size(184, 58);
+            this.btn_ToRome.TabIndex = 3;
+            this.btn_ToRome.Text = "Перевод в римскую систему счисления";
+            this.btn_ToRome.UseVisualStyleBackColor = false;
+            this.btn_ToRome.Click += new System.EventHandler(this.btn_ToRome_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_ToRome);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Главное меню";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -87,6 +100,7 @@ namespace Calculator_5_klassnika
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.Button btn_ToRome;
     }
 }
 
