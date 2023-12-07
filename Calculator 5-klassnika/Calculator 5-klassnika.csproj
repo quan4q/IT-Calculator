@@ -52,6 +52,12 @@
     <Compile Include="Answer.Designer.cs">
       <DependentUpon>Answer.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExplanationOfSum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExplanationOfSum.Designer.cs">
+      <DependentUpon>ExplanationOfSum.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,8 +84,17 @@
     <Compile Include="RomeNotationAnswer.Designer.cs">
       <DependentUpon>RomeNotationAnswer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Summation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Summation.Designer.cs">
+      <DependentUpon>Summation.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Answer.resx">
       <DependentUpon>Answer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExplanationOfSum.resx">
+      <DependentUpon>ExplanationOfSum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -101,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RomeNotationAnswer.resx">
       <DependentUpon>RomeNotationAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Summation.resx">
+      <DependentUpon>Summation.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

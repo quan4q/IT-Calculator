@@ -35,5 +35,12 @@ namespace Calculator_5_klassnika
             rome.Show();
             this.Visible = false;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Summation sum = new Summation();
+            sum.Show();
+            this.Visible = false;
+        }
     }
 }

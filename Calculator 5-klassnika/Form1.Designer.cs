@@ -33,6 +33,7 @@ namespace Calculator_5_klassnika
             this.button1 = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.btn_ToRome = new System.Windows.Forms.Button();
+            this.btn_ToSummation = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -78,12 +79,24 @@ namespace Calculator_5_klassnika
             this.btn_ToRome.UseVisualStyleBackColor = false;
             this.btn_ToRome.Click += new System.EventHandler(this.btn_ToRome_Click);
             // 
+            // btn_ToSummation
+            // 
+            this.btn_ToSummation.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btn_ToSummation.Location = new System.Drawing.Point(303, 190);
+            this.btn_ToSummation.Name = "btn_ToSummation";
+            this.btn_ToSummation.Size = new System.Drawing.Size(184, 58);
+            this.btn_ToSummation.TabIndex = 4;
+            this.btn_ToSummation.Text = "Сложение в произвольной СС";
+            this.btn_ToSummation.UseVisualStyleBackColor = false;
+            this.btn_ToSummation.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_ToSummation);
             this.Controls.Add(this.btn_ToRome);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.button1);
@@ -101,6 +114,7 @@ namespace Calculator_5_klassnika
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Button btn_ToRome;
+        private System.Windows.Forms.Button btn_ToSummation;
     }
 }
 
